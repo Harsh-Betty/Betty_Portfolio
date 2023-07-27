@@ -1,0 +1,13 @@
+body.dark-mode {
+    background-image: url(./assets/bg-dark-mode.jpg);
+    background-size: cover;
+    color: #F5F5F5;
+}
+
+body.dark-mode .contentBx h3{
+    color: #F5F5F5;
+}
+
+body.dark-mode .sci li a{
+    color: #F5F5F5;
+}

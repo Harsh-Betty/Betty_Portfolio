@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  padding-bottom: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-image: url(./assets/bg-light-mode.jpg);
+  background-size: cover;
+  color: #333333;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark_btn {
+  background-color: inherit;
+  border: none;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-me {
+  width: 100%;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.about-me>p {
+  font-size: 2rem;
+}
+
+
+.card {
+  position: relative;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.card:hover .card-body {
+  transform: translateY(-20px);
+}
+
+.imgBx {
+  position: relative;
+  width: 240px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentBx h3 {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.contentBx h3 span {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: initial;
+}
+
+.sci {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(60px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card:hover .sci li {
+  transform: translateY(30px);
+  opacity: 1;
+}
+
+.sci li a {
+  color: #000;
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
