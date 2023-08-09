@@ -15,13 +15,17 @@ body::-webkit-scrollbar {
 }
 
 body {
-  padding-bottom: 20px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-image: url(./assets/bg-light-mode.jpg);
   background-size: cover;
   color: #333333;
   font-family: 'Inter', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .dark_btn {
@@ -130,9 +134,36 @@ body {
   font-size: 20px;
 }
 
-footer {
-  position: fixed;
+.contact-section-header > h2 {
+  font-size: 4rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 2rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.divider{
+  width: 100%;
+  height: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+              inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.footer{
+  position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+}
+
+footer a:hover{
+  color: grey;
 }

@@ -242,7 +242,22 @@
     0% { transform: rotate(10deg); }
     100% { transform: rotate(-10deg); }
    }
-    
+
+
+   /*
+  ---------------------------
+     GMAIL MICROANIMATION
+  ---------------------------
+  */
+    .gmail:hover .envhead{
+      transform-origin: bottom right;
+    animation: moveHead 1s infinite alternate;
+    }
+
+    @keyframes moveHead {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
+     }
   
   /*
   ----------------------------
